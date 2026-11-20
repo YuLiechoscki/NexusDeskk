@@ -1,0 +1,8 @@
+{
+  "name": "nexus-desk-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node --env-file-if-exists=.env serve.mjs", "dev": "node --env-file-if-exists=.env serve.mjs" }
+}

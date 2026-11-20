@@ -1,0 +1,55 @@
+@media (max-width: 1200px) {
+  .content { padding-inline: 22px; }
+  .topbar { padding-inline: 19px; }
+  .metric-label { font-size: .81rem; }
+  .donut-layout { grid-template-columns: minmax(92px,.8fr) minmax(0,1.15fr); gap: 5px 8px; }
+  th, td { padding-inline: 11px; }
+}
+@media (max-width: 1040px) {
+  :root { --sidebar-width: 211px; }
+  .dashboard-charts { grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); }
+  .metric-foot { font-size: .7rem; }
+  .ticket-link { flex-wrap: wrap; gap: 2px 7px; }
+}
+@media (max-width: 900px) {
+  .sidebar { width: min(278px, 86vw); transform: translateX(-104%); transition: transform .2s ease; z-index: 25; }
+  .mobile-menu-open .sidebar { transform: translateX(0); }
+  .scrim { display: block; z-index: 23; position: fixed; inset: 0; width: 100%; border: 0; background: #0b12396b; }
+  .main-shell { margin-left: 0; }
+  .content { padding-inline: 18px; }
+  .topbar { padding-inline: 14px; }
+}
+@media (max-width: 680px) {
+  :root { --header-height: 58px; }
+  .content { padding: 18px 12px 32px; }
+  .topbar { padding-inline: 7px; gap: 7px; }
+  .top-left { gap: 2px; }
+  .top-right { gap: 2px; }
+  .top-divider { margin-inline: 3px; }
+  .breadcrumbs > span, .breadcrumbs > .icon, .profile-copy, .profile-button > .icon, .search-trigger > :is(span,kbd) { display: none; }
+  .search-trigger { min-width: 37px; width: 37px; height: 38px; justify-content: center; padding: 0; border: 0; background: transparent; }
+  .profile-button { min-height: 38px; padding-inline: 3px; }
+  .notifications-popover { right: -45px; }
+  .page-head { align-items: flex-start; flex-direction: column; gap: 11px; margin-bottom: 15px; }
+  .page-head p { font-size: .875rem; }
+  .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .metric { padding: 10px; }
+  .metric-icon { width: 28px; height: 28px; }
+  .metric-icon .icon { width: 15px; height: 15px; }
+  .metric-value { font-size: 1.62rem; }
+  .metric.minor .metric-value { font-size: 1.35rem; }
+  .dashboard-charts, .dashboard-extra, .split, .team-grid, .detail-grid { grid-template-columns: 1fr; gap: 12px; }
+  .stack { gap: 12px; }
+  .donut-layout { grid-template-columns: minmax(95px, .85fr) minmax(0, 1fr); }
+  .chart-key { font-size: .69rem; }
+  .panel-head, .panel-body { padding-inline: 12px; }
+  .ticket-toolbar { padding-inline: 10px; }
+  .sort-ticket { margin-left: 0; }
+  .form-row { grid-template-columns: 1fr; }
+  .login-layout { grid-template-columns: 1fr; }
+  .login-art { display: none; }
+  .login-main { min-height: 100dvh; padding: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

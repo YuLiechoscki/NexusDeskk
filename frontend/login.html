@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Entrar | Nexus Desk</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/preferences.js"></script>
+  <script type="module" src="js/login.js"></script>
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-main" aria-labelledby="login-title">
+      <a class="brand" href="login.html"><img src="assets/mark.svg" width="36" height="36" alt=""><span>Nexus<span class="brand-desk">Desk</span></span></a>
+      <div class="login-body">
+        <h1 id="login-title">Acesse seu workspace</h1>
+        <p class="muted">Entre para acompanhar e gerenciar seus chamados.</p>
+        <form id="login-form" class="form-stack">
+          <label>E-mail corporativo<input type="email" name="email" placeholder="voce@empresa.com" autocomplete="username" maxlength="254" required></label>
+          <label>Senha<input type="password" name="password" placeholder="Sua senha" autocomplete="current-password" maxlength="128" required></label>
+          <p id="login-error" class="error-text" role="alert" hidden></p>
+          <button type="submit" class="button primary login-submit">Entrar</button>
+        </form>
+        <div id="demo-panel" class="demo-panel" hidden>
+          <h2>Explore a demonstração</h2>
+          <p class="muted">Selecione um perfil para entrar com dados de exemplo.</p>
+          <div id="demo-roles" class="demo-roles"></div>
+        </div>
+      </div>
+      <p class="login-footer muted">Nexus Desk · Central de atendimento</p>
+    </section>
+    <aside class="login-art" aria-hidden="true">
+      <div class="login-orbit orbit-one"></div><div class="login-orbit orbit-two"></div><div class="login-orbit orbit-three"></div>
+      <div class="login-art-content">
+        <img src="assets/mark.svg" alt="" width="82" height="82">
+        <p>Sua operação,<br>em um só lugar.</p>
+        <span>Chamados, equipes e SLA conectados.</span>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

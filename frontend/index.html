@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Central de atendimento, chamados e SLA Nexus Desk">
+  <title>Nexus Desk</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/preferences.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div id="shell" class="shell" aria-busy="true">
+    <aside id="sidebar" class="sidebar" aria-label="Navegação lateral">
+      <a class="brand" href="#/dashboard" title="Nexus Desk"><img src="assets/mark.svg" width="36" height="36" alt=""><span>Nexus<span class="brand-desk">Desk</span></span></a>
+      <nav id="navigation" aria-label="Menu principal"></nav>
+      <div id="workspace" class="workspace"></div>
+    </aside>
+    <button id="scrim" class="scrim" type="button" aria-label="Fechar menu" hidden></button>
+    <div class="main-shell">
+      <header id="topbar" class="topbar"></header>
+      <main id="conteudo" class="content" tabindex="-1">
+        <div class="skeleton skeleton-title"></div>
+        <div class="metric-grid" aria-label="Carregando indicadores"><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div></div>
+      </main>
+    </div>
+  </div>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <dialog id="dialog" class="dialog"></dialog>
+</body>
+</html>
